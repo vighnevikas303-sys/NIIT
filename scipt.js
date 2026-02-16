@@ -58,10 +58,10 @@ else{
     console.log("odd number")
 }
 
-let n=100;
+let y=100;
 for(let i=1;i<=100;i++)
 {
-    if(n%i==0)
+    if(y%i==0)
     {
         console.log("not prime number")
         break;
@@ -75,3 +75,89 @@ for(let i=20;i>=11;i--)
 {
     console.log(i);
 }
+
+
+console.log("2.time complexity is more compare to optimal solution"); 
+for(let i=1952;i<=2024;i++)
+{
+    if(i%4==0)
+    {
+        console.log(i);
+    }
+    
+}
+
+console.log("1.optimal solution for leap year");
+let j=1999;
+while(j<2025)
+{
+    if(j%4!=0)
+    {
+        j++;
+    }
+    else 
+    {
+        console.log(j);
+        j+=4;
+    }
+}
+
+
+    for(let i=1;i<=10;i++)
+    {
+        console.log(i);
+    }
+
+for(let i=10;i>=1;i--)
+{
+    console.log(i);
+}   
+for(let i=1;i<=10;i++)
+{
+    console.log(i);
+    if(i==5)
+    {
+        break;
+    }
+}  
+for(let i=1;i<=10;i++)
+{
+    
+    if(i==5)
+    {
+        continue
+    }
+    console.log(i);
+}  
+let sum=0; 
+for(let i=1;i<=10;i++)
+{
+     sum+=i;
+     
+}
+console.log("sum of first 10 natural number is:"+sum);  
+
+let x=100; 
+for(let i=1;i<=10;i++)
+{
+     x-=i;
+     
+}
+console.log("final value of x is:"+x);  
+
+let factorial=1;
+for(let i=1;i<=5;i++)
+{
+    factorial*=i;
+}
+console.log("factorial of 5 is:"+factorial);
+
+let n=1234;
+let reverse=0;
+
+while(n>0)
+{
+    reverse=reverse*10+n%10;
+    n=Math.floor(n/10);
+}
+console.log("reverse of 1234 is:"+reverse);
